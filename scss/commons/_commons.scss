@@ -1,0 +1,64 @@
+body {
+  width: 1920px;
+  max-width: 1920px;
+  min-width: 650px;
+  height: auto;
+  margin: 0 auto;
+  font-family: $font-regular;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 100%;
+}
+
+section {
+  padding: 0 17%;
+  margin-bottom: 100px;
+
+  &:last-child{
+    margin-bottom: 0;
+  }
+}
+
+.button {
+  align-items: center;
+  padding: 20px 40px;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: $white;
+  background-color: $black;
+  font-weight: bold;
+  letter-spacing: 1px;
+  box-sizing: border-box;
+
+  &:hover {
+    outline: 1px solid $dark-gray;
+    background-color: $gray;
+    color: $black;
+    transition: 0.2s;
+  }
+
+}
+
+input {
+  &:focus::-webkit-input-placeholder {
+      color: transparent;
+      transition: 0.2s;
+    }
+  
+    &:focus::-moz-placeholder {
+      color: transparent;
+      transition: 0.2s;
+    }
+  
+    &:focus:-moz-placeholder {
+      color: transparent;
+      transition: 0.2s;
+    }
+  
+    &:focus:-ms-input-placeholder {
+      color: transparent;
+      transition: 0.2s;
+    }
+}
