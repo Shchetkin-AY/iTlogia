@@ -15,14 +15,18 @@
           <img src="img/logo.png" alt="logo" />
         </div>
         <ul class="navigation__menu">
-          <li class="navigation__item navigation__item--active">
-            <a calss="navigation__link" href="#">Главная</a>
+          <li class="navigation__item">
+            <a class="navigation__link" id="js-navMainBtn" href="#">Главная</a>
           </li>
           <li class="navigation__item">
-            <a calss="navigation__link" href="#">Автомобили</a>
+            <a class="navigation__link" id="js-navCarsBtn" href="#"
+              >Автомобили</a
+            >
           </li>
           <li class="navigation__item">
-            <a calss="navigation__link" href="#">Бронирование авто</a>
+            <a class="navigation__link js-order" id="js-navOrderBtn" href="#"
+              >Бронирование авто</a
+            >
           </li>
         </ul>
       </header>
@@ -41,10 +45,10 @@
             </p>
           </div>
         </div>
-        <button class="button">Просмотреть автомобили</button>
+        <button class="button" id="js-viewCars">Просмотреть автомобили</button>
       </section>
 
-      <section class="content">
+      <section class="content" id="js-garage">
         <div class="text-block__subtitle">
           <p>Наш автопарк</p>
         </div>
@@ -73,7 +77,9 @@
                 <p>2019</p>
               </li>
             </ul>
-            <button class="button car-card__button">Забронировать</button>
+            <button class="button car-card__button js-order">
+              Забронировать
+            </button>
           </li>
           <li class="car-card">
             <div class="car-card__img">
@@ -99,7 +105,9 @@
                 <p>2017</p>
               </li>
             </ul>
-            <button class="button car-card__button">Забронировать</button>
+            <button class="button car-card__button js-order">
+              Забронировать
+            </button>
           </li>
           <li class="car-card">
             <div class="car-card__img">
@@ -125,7 +133,9 @@
                 <p>2010</p>
               </li>
             </ul>
-            <button class="button car-card__button">Забронировать</button>
+            <button class="button car-card__button js-order">
+              Забронировать
+            </button>
           </li>
           <li class="car-card">
             <div class="car-card__img">
@@ -151,7 +161,9 @@
                 <p>2019</p>
               </li>
             </ul>
-            <button class="button car-card__button">Забронировать</button>
+            <button class="button car-card__button js-order">
+              Забронировать
+            </button>
           </li>
           <li class="car-card">
             <div class="car-card__img">
@@ -177,7 +189,9 @@
                 <p>2018</p>
               </li>
             </ul>
-            <button class="button car-card__button">Забронировать</button>
+            <button class="button car-card__button js-order">
+              Забронировать
+            </button>
           </li>
           <li class="car-card">
             <div class="car-card__img">
@@ -203,7 +217,9 @@
                 <p>2019</p>
               </li>
             </ul>
-            <button class="button car-card__button">Забронировать</button>
+            <button class="button car-card__button js-order">
+              Забронировать
+            </button>
           </li>
           <li class="car-card">
             <div class="car-card__img">
@@ -229,7 +245,9 @@
                 <p>2018</p>
               </li>
             </ul>
-            <button class="button car-card__button">Забронировать</button>
+            <button class="button car-card__button js-order">
+              Забронировать
+            </button>
           </li>
           <li class="car-card">
             <div class="car-card__img">
@@ -255,7 +273,9 @@
                 <p>2019</p>
               </li>
             </ul>
-            <button class="button car-card__button">Забронировать</button>
+            <button class="button car-card__button js-order">
+              Забронировать
+            </button>
           </li>
           <li class="car-card">
             <div class="car-card__img">
@@ -281,12 +301,14 @@
                 <p>2019</p>
               </li>
             </ul>
-            <button class="button car-card__button">Забронировать</button>
+            <button class="button car-card__button js-order">
+              Забронировать
+            </button>
           </li>
         </ul>
       </section>
 
-      <footer class="footer">
+      <footer class="footer" id="js-footer">
         <section class="last-section">
           <div class="last-section__text-block">
             <div class="text-block__subtitle footer__title">
@@ -299,22 +321,40 @@
             </div>
           </div>
           <div class="form-block">
-            <form class="form-block__feetback-form" action="#">
-              <input type="text" placeholder="Ваше имя"/>
-              <input type="tel" placeholder="Ваш телефон"/>
-              <input type="text" placeholder="Автомобиль который вас интересует"/>
-              <button class="button" type="submit">Узнать цену</button>
+            <form
+              class="form-block__feetback-form"
+              id="feetback-form"
+              action="#"
+            >
+              <input type="text" id="js-nameField" placeholder="Ваше имя" required/>
+              <input type="tel" id="js-phoneField" placeholder="Ваш телефон" required/>
+              <input
+                type="text"
+                id="js-carField"
+                placeholder="Автомобиль который вас интересует"
+                required
+              />
+              <button class="button" id="btn-price">Узнать цену</button>
             </form>
-            <div class="form-block__img">
-              <img src="img/rolls.png" alt="">
-            </div>
+            <img
+              src="img/rolls.png"
+              alt="rols"
+              class="form-block__img"
+              id="footer-img"
+            />
           </div>
         </section>
       </footer>
       <section class="copyrigts">
-        <img src="img/logo.png" alt="logo">
+        <img class="copyrigts__img" src="img/logo.png" alt="logo" />
         <div class="copyrigts__text"><p>Все права защищены</p></div>
+        <div class="btn-up"></div>
       </section>
     </div>
+
+    <script src="js/scroll.js"></script>
+    <script src="js/paralax.js"></script>
+    <script src="js/scrollUpArrow.js"></script>
+    <script src="js/formValid.js"></script>
   </body>
 </html>

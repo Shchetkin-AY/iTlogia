@@ -16,11 +16,11 @@
 		// .navigation__menu
 
 		&__menu {
-      margin-left: 22%;
-      width: 50%;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
+          margin-left: 22%;
+          width: 52%;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
 		}
     
 
@@ -28,22 +28,21 @@
 
 		&__item {
 
-      margin-right: 40px;
-      width: 50%;
-      font-family: "Open Sans", sans-serif;
-      font-size: 18px;
-      color: #48555b;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+          margin-right: 40px;
+          width: 50%;
+          font-family: "Open Sans", sans-serif;
+          font-size: 18px;
+          color: #48555b;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
 
 			// .navigation__item--active
 
-			&--active {
-        font-weight: bold;
-
-			}
+          &:hover {
+            font-weight: bold;
+          }
 		}
 }
 
